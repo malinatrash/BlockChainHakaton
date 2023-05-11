@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import {Navigate, Route, Routes} from "react-router";
+import React from "react";
+import Auth from "./pages/auth/Auth";
+import SignUp from "./pages/auth/modules/SignUp";
+import SignIn from "./pages/auth/modules/SignIn";
+import {NavLink} from "react-router-dom";
+import HeaderItem from "./components/HeaderItem";
+import Catalog from "./pages/catalog/Catalog";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <Routes>
+      <Route path={'/signup'} element={<SignUp/>}/>
+      <Route path={'/signin'} element={<SignIn/>}/>
+      <Route path={'/catalog'} element={<Catalog/>}/>
+      <Route path={'/'} element={<Navigate to={'signin'}/>}/>
+    </Routes>
+  </div>
+);
 
 export default App;

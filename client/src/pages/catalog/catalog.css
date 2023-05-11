@@ -1,0 +1,31 @@
+.catalog {
+    width: 100%;
+    height: 100%;
+    background: #d62b21;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.book-catalog {
+    margin: 30px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background: white;
+    border-radius: 15px;
+}
+
+.book-item {
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    background: beige;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #d62b21;
+}

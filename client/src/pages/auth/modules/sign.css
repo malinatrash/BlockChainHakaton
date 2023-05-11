@@ -1,0 +1,19 @@
+.sign-form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    gap: 20px;
+}
+
+.view {
+    background: #d62b21;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
